@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="PageValues <= 0.992\nentropy = 0.614\nsamples = 11330\nvalue = [9613, 1717]"] ;
+1 [label="Month <= 5.5\nentropy = 0.226\nsamples = 8886\nvalue = [8562, 324]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PageValues <= 0.06\nentropy = 0.003\nsamples = 4424\nvalue = [4423, 1]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 4412\nvalue = [4412, 0]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.414\nsamples = 12\nvalue = [11, 1]"] ;
+2 -> 4 ;
+5 [label="ProductRelated <= 55.5\nentropy = 0.375\nsamples = 4462\nvalue = [4139, 323]"] ;
+1 -> 5 ;
+6 [label="entropy = 0.321\nsamples = 3778\nvalue = [3557, 221]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.608\nsamples = 684\nvalue = [582, 102]"] ;
+5 -> 7 ;
+8 [label="BounceRates <= 0.0\nentropy = 0.986\nsamples = 2444\nvalue = [1051, 1393]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="PageValues <= 23.664\nentropy = 0.832\nsamples = 1098\nvalue = [289, 809]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.982\nsamples = 497\nvalue = [209, 288]"] ;
+9 -> 10 ;
+11 [label="entropy = 0.566\nsamples = 601\nvalue = [80, 521]"] ;
+9 -> 11 ;
+12 [label="Month <= 9.5\nentropy = 0.987\nsamples = 1346\nvalue = [762, 584]"] ;
+8 -> 12 ;
+13 [label="entropy = 0.947\nsamples = 751\nvalue = [477, 274]"] ;
+12 -> 13 ;
+14 [label="entropy = 0.999\nsamples = 595\nvalue = [285, 310]"] ;
+12 -> 14 ;
+}
